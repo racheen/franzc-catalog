@@ -46,12 +46,12 @@ export default function ProductPage() {
             />
           </div>
           <div className="flex flex-col h-full">
-            <div className="flex-1 overflow-y-auto">
-              <div className="flex justify-between items-center mb-1">
+            <div className="flex-1 overflow-y-auto mb-2">
+              <div className="flex justify-between items-center">
                 <p className="text-2xl font-serif font-bold text-black mb-1">
                   {product.name.toUpperCase()}
                 </p>
-                <div>
+                <div className="flex items-center">
                   <button
                     onClick={() =>
                       prevProduct && navigateProduct(prevProduct.id)
@@ -87,7 +87,7 @@ export default function ProductPage() {
                 ${product.price.toFixed(2)}
               </p>
             </div>
-            <div className="overflow-y-auto max-h-80 grid grid-cols-2 gap-4">
+            <div className="overflow-y-auto max-h-200 grid grid-cols-2 gap-4">
               {product.imageUrls.map((url, index) => (
                 <img
                   key={index}
