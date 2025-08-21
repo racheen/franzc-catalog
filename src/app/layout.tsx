@@ -2,8 +2,8 @@ import { ThemeProvider } from 'next-themes';
 import './globals.css';
 
 export const metadata = {
-  title: 'My Firebase Tailwind App',
-  description: 'Next.js + Tailwind + Firebase starter',
+  title: 'Franz Catalog',
+  description: "Franz's catalog of products",
 };
 
 export default function RootLayout({
